@@ -1,5 +1,5 @@
-# multi-threading
-Multi-threading operations for converting rgb images to grayscale
+### multi-threading
+## Multi-threading operations for converting rgb images to grayscale
 
 Comparison of processing speed by controlling number of threads:
 <br/> ->Number of threads increase ,processing time decreases
