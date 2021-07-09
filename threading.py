@@ -27,7 +27,7 @@ totalFiles = 100
 from PIL import Image
 
 inputDirName='' #enter address for input dir
-outputDirName='bwcats'  #enter name for output dir
+outputDirName=''  #enter name for output dir
 
 try:
     # Delete output directory and then create it
@@ -47,7 +47,7 @@ def grayscaleConvert(fileName):
 def timetaken(N):
     startTime=time.time()
     for i in range(totalFiles):
-        fN="cat."+str(i+4001)+".jpg"
+        fN="cat."+str(i+4001)+".jpg" #filename as string
         t = threading.Thread(target=grayscaleConvert , args=(fN,))
         t.start()
         while True:
